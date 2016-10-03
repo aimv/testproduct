@@ -18,6 +18,7 @@ $query = "SELECT o.price, o.date_create, o.count, "
 
 $res = mysql_query($query) or die(mysql_error());
 
+
 $total_sum = 0;
 $rows = array();
 while ($row = mysql_fetch_array($res, MYSQL_ASSOC)) {
