@@ -13,7 +13,7 @@ $query = "SELECT o.price, o.date_create, o.count, "
 		. "p.name, p.price as new_price, "
 		. "o.price*o.count as cost "
 		. "FROM orders as o "
-		. "LEFT JOIN products as p ON o.product_id=p.id		"
+		. "LEFT JOIN products as p ON o.product_id=p.id "
 		. "WHERE o.customer_id=$customer_id;";
 
 $res = mysql_query($query) or die(mysql_error());
